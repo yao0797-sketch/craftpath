@@ -1,0 +1,25 @@
+{
+  "metadata": {"status":"demo", "note":"Replace with verified, licensed or self-collected data before indexing at scale."},
+  "recipes": [
+    {"a":"Water","b":"Earth","output":"Plant"},
+    {"a":"Fire","b":"Earth","output":"Lava"},
+    {"a":"Water","b":"Fire","output":"Steam"},
+    {"a":"Plant","b":"Earth","output":"Tree"},
+    {"a":"Plant","b":"Fire","output":"Smoke"},
+    {"a":"Lava","b":"Water","output":"Stone"},
+    {"a":"Stone","b":"Fire","output":"Metal"},
+    {"a":"Tree","b":"Tree","output":"Forest"},
+    {"a":"Earth","b":"Earth","output":"Mountain"},
+    {"a":"Water","b":"Water","output":"Lake"},
+    {"a":"Fire","b":"Fire","output":"Energy"},
+    {"a":"Stone","b":"Stone","output":"Rock"},
+    {"a":"Human","b":"Fire","output":"Wizard"},
+    {"a":"Dinosaur","b":"Fire","output":"Dragon"},
+    {"a":"Dragon","b":"Fire","output":"Phoenix"},
+    {"a":"Human","b":"Earth","output":"Farmer"},
+    {"a":"Water","b":"Wind","output":"Rain"},
+    {"a":"Rain","b":"Earth","output":"Flower"},
+    {"a":"Human","b":"Human","output":"Family"},
+    {"a":"Computer","b":"Network","output":"Internet"}
+  ]
+}

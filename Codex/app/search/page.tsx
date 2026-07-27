@@ -1,0 +1,3 @@
+import Link from 'next/link'; import {findRecipes,slug} from '@/lib/recipes';
+export const metadata={title:'Search Infinite Craft Recipes | CraftPath',robots:{index:false,follow:true}};
+export default function Search({searchParams}:{searchParams:{q?:string}}){const q=searchParams.q||'';const results=findRecipes(q);return <><h1>Search recipes</h1><form className="search" action="/search"><input name="q" defaultValue={q} placeholder="Search an element"/><button>Search</button></form>{q&&<p>{results.length} results for “{q}”</p>}<div className="grid">{results.map((r,i)=><Link className="card" href={`/recipes/${slug(r.output)}`} key={i}><h3>{r.output}</h3><p>{r.a} + {r.b}</p></Link>)}</div></>}

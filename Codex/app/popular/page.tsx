@@ -1,0 +1,1 @@
+import Link from 'next/link'; import {slug} from '@/lib/recipes'; export default function Popular(){const items=['Dragon','Human','Phoenix','Wizard','Plant','Lava'];return <><h1>Popular recipes</h1><div className="grid">{items.map(x=><Link className="card" href={`/recipes/${slug(x)}`} key={x}><h3>{x}</h3><span className="muted">Open recipe →</span></Link>)}</div></>}
